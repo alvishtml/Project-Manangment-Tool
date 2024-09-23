@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Management Tool</h1>
+
+        <!-- Add New Project -->
+        <div class="project-section">
+            <h2>Add New Project</h2>
+            <form id="projectForm">
+                <input type="text" id="projectName" placeholder="Project Name" required>
+                <button type="submit">Add Project</button>
+            </form>
+        </div>
+
+        <!-- Project List -->
+        <div class="project-section">
+            <h2>Your Projects</h2>
+            <ul id="projectList"></ul>
+        </div>
+
+        <!-- Project Details -->
+        <div id="projectDetails" class="hidden">
+            <h2>Project Details: <span id="currentProjectName"></span></h2>
+
+            <!-- Add Team Member -->
+            <form id="teamForm">
+                <input type="text" id="teamMember" placeholder="Team Member Name" required>
+                <button type="submit">Add Team Member</button>
+            </form>
+
+            <h3>Team Members</h3>
+            <ul id="teamList"></ul>
+
+            <!-- Add Task -->
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Task Name" required>
+                <button type="submit">Add Task</button>
+            </form>
+
+            <h3>Tasks</h3>
+            <ul id="taskList"></ul>
+
+            <!-- Progress -->
+            <h3>Progress</h3>
+            <p id="progress"></p>
+        </div>
+
+        <button id="backButton" class="hidden">Back to Projects</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
